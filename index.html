@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM EVENTS</title>
+</head>
+<body>
+
+    <section>
+        <h1  onclick="console.log('I am clicked')">DOM er ajk special class</h1>
+        <button onclick="console.log(7)">Click Me</button>
+        <button onclick="console.log(77)">Another button</button>
+        <br>
+        <button onclick="document.body.style.backgroundColor='yellow'">Make yellow</button>
+        <br>
+        <button onclick="makeRed()">Make Red</button>
+        <button id="make-blue">Make blue</button>
+        <br>
+        <button class="make-green">Make Green</button>
+
+
+        <br>
+        <button id="make-purple">Make purple</button>
+    </section>
+    
+     <script>
+
+        const makePurpleButton=document.getElementById('make-purple');
+        makePurpleButton.onclick= function makePurple(){
+            document.body.style.backgroundColor='purple';
+        }
+
+       
+     </script>
+    <script src="js/event.js"></script>
+</body>
+</html>
